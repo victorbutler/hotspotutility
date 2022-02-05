@@ -45,11 +45,11 @@ class _ParentWidgetState extends State<ParentWidget> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.bluetooth),
-            title: Text('Hotspots'),
+            label: ('Hotspots'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.menu),
-            title: Text('More'),
+            label: ('More'),
           ),
         ],
         currentIndex: _selectedIndex,

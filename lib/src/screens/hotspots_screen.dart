@@ -43,8 +43,7 @@ class BluetoothOffScreen extends StatelessWidget {
             Text(
               'Bluetooth Adapter is ${state.toString().substring(15)}.',
               style: Theme.of(context)
-                  .primaryTextTheme
-                  .subhead
+                  .primaryTextTheme.titleMedium
                   .copyWith(color: Colors.white),
             ),
           ],
@@ -187,7 +186,7 @@ class _FindDevicesScreenState extends State<FindDevicesScreen> {
                                   'No Hotspots Found',
                                   style: Theme.of(context)
                                       .textTheme
-                                      .headline
+                                      .titleLarge
                                       .copyWith(color: Colors.grey),
                                   textAlign: TextAlign.center,
                                 ),

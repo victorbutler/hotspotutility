@@ -12,6 +12,12 @@ buildscript {
     }
 }
 
+Android {
+    defaultConfig {
+        minSdkVersion: 19
+    }
+}
+
 allprojects {
     repositories {
         google()

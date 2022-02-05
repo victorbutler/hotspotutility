@@ -18,8 +18,8 @@ Unofficial Helium Hotspot Utility Mobile App for iOS and Android built with Flut
 * run `pub pub global activate protoc_plugin` to get .dart files into C:\Users\{User}\AppData\Roaming\Pub\Cache\bin (move files from here to protoc bin dir)
 * Install dart-sdk `choco install dart-sdk`
 * cd protos
-* run `protoc --dart_out=..\lib\gen .\hotspotutility.proto`
-* run `protoc --objc_out=..\ios\gen .\hotspotutility.proto`
+* run `protoc --dart_out=../lib/gen ./hotspotutility.proto`
+* run `protoc --objc_out=../ios/gen ./hotspotutility.proto`
 
 ## Firebase Libraries
 There are Firebase services used on the published app, if you do not require the firebase libraries you can simply remove them. 
