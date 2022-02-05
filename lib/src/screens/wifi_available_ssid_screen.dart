@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:quick_blue/quick_blue.dart';
 import 'package:flutter_blue/flutter_blue.dart';
 import 'package:hotspotutility/gen/hotspotutility.pb.dart' as protos;
 import 'package:hotspotutility/src/screens/wifi_connect_screen.dart';
@@ -42,6 +43,13 @@ class _WifiAvailableScreenState extends State<WifiAvailableScreen> {
   @mustCallSuper
   void initState() {
     super.initState();
+
+    QuickBlue.scanResultStream.listen((result) {
+      print('onScanResult $result');
+    });
+
+    QuickBlue.startScan();
+
     wifiSsidListStreamController.add([]);
 
     widget.wifiConfiguredServicesChar.read().then((value) {
